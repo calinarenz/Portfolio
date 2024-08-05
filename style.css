@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "304338", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.content {
+    position: relative;
+    height: 600px;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1s ease
+    opacity: 0; /* Initially hidden */
+}
+
+@keyframes fadeInContent {
+    to {
+        opacity: 1;
+    }
+}
+
+.content h1,
+.content h2,
+.content p {
+    opacity: 0; /* Initially hidden */
+}
+
+
+.content h1 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0; /* Adjust margin as needed */
+    animation: fadeInH1 1s ease forwards;
+    animation-delay: 0.5s; /* Delay after .content */
+}
+
+@keyframes fadeInH1 {
+    to {
+        opacity: 1;
+    }
+}
+
+.content h2 {
+    color: #fff;
+    font-size: 90px;
+    margin-top: -1%;
+    animation: fadeInH2 1s ease forwards;
+    animation-delay: 1s; 
+}
+
+@keyframes fadeInH2 {
+    to {
+        opacity: 1;
+    }
+}
+
+.content p {
+    color: floralwhite;
+    font-size: 15px;
+    margin-top: 1%;
+    margin-bottom: -80px; 
+    margin-left: 20px; 
+    margin-right: 20px;
+    line-height: 21px;
+    animation: fadeInP 1s ease forwards;
+    animation-delay: 1.5s; /* Delay after .content */
+}
+
+@keyframes fadeInP {
+    to {
+        opacity: 2;
+    }
+}
+
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 15px;
+    margin: 10 15px; 
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #381cb8;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.footer{
+    text-align: center; 
+
+}
+
+.footer img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    margin-top: 12%;
+    margin-bottom: 13%;  
+}
+
+.footer h3 {
+    color: #fff;
+    font-size: 15px;
+    margin-top: -12%;
+}
+
+#works {
+    background-color: #eaeaea; /* Example background color */
+    padding: 20px;
+    font-family: "304338", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#works h1 {
+    color: #610998; /* Example heading color */
+    font-size: 26px; /* Example heading font size */
+}
+
+#works p {
+    color: #3b1086; /* Example paragraph text color */
+    font-style: oblique; /* Example italic text */
+    font-size: 20px;
+
+}
+
